@@ -1,5 +1,5 @@
 %{
-#include "build/y.tab.h"
+#include "y.tab.h"
 %}
 
 %%
