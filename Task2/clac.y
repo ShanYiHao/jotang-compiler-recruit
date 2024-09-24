@@ -5,11 +5,11 @@ void yyerror(const char* msg) {}
 
 %union {
     int ival;
-    *char sval;
 }
 
 %token <ival> T_NUM
 %token T_INC T_AND_MUL T_OR_MUL
+
 %left '+' '-'
 %left '*' '/'
 
