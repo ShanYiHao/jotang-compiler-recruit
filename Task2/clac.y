@@ -7,7 +7,7 @@ void yyerror(const char* msg) {}
     int ival;
 }
 
-%token T_NUM
+%token <ival> T_NUM
 
 %left '+' '-'
 %left '*' '/'
