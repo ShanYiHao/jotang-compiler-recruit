@@ -8,6 +8,7 @@ find_package(BISON REQUIRED)
 # 生成解析器和词法分析器
 BISON_TARGET(Parser clac.y ${CMAKE_CURRENT_BINARY_DIR}/y.tab.c
     DEFINES_FILE ${CMAKE_CURRENT_BINARY_DIR}/y.tab.h
+
 )
 FLEX_TARGET(Scanner clac.l ${CMAKE_CURRENT_BINARY_DIR}/lex.yy.c)
 ADD_FLEX_BISON_DEPENDENCY(Scanner Parser)

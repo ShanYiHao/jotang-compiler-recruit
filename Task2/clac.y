@@ -12,6 +12,7 @@ void yyerror(const char* msg) {}
 
 %left '+' '-'
 %left '*' '/'
+%left T_INC T_AND_MUL T_OR_MUL
 
 %type <ival> S E
 
